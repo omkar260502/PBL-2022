@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'slothicons';
+  src: url("../fonts/slothicons.ttf?v=1590114356623") format("truetype"), url("../fonts/slothicons.woff?v=1590114356623") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+[class^="sothicon-"],
+[class*=" sothicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'slothicons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.sothicon-arrow-down:before {
+  content: "\e900"; }
+
+.sothicon-arrow-up:before {
+  content: "\e901"; }
+
+.sothicon-minus:before {
+  content: "\e902"; }
+
+.sothicon-plus:before {
+  content: "\e903"; }

@@ -1,0 +1,362 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Gideon Roman', cursive;
+}
+
+.logo {
+  color:#fff;
+}
+.navbar-custom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: rgba(7,7,7,0.5);
+}
+
+.hero{
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: left;
+  color: #000;
+  background-image: url("./images/hero.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size:cover;
+}
+
+.hero-heading{
+  font-size: 3.25rem;
+  font-weight: bold;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+/*Carousel*/
+/*Testimonial*/
+.all{
+  background: #292626;
+}
+.des-color{
+  color: #fff;
+}
+
+.testimonial p{
+    font-weight: bold;
+    color: #fff;
+}
+.testimonial h2{
+    font-weight: bold;
+    color: #fff;
+}
+/* end of the Carousel*/
+
+
+
+  .about {
+    padding: 100px 0 0 0;
+  }
+  
+  .about .icon-boxes h3 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #080808;
+    margin-bottom: 15px;
+  }
+
+  .about {
+    padding: 100px 0 0 0;
+  }
+  
+  .about .icon-boxes h3 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #070707;
+    margin-bottom: 15px;
+  }
+
+
+  /*==========Summary Board====*/
+.sum-board {
+  min-height: 140px;
+  margin-bottom: 30px;
+  padding: 20px;
+  color: white;
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.3),
+    0 3px 1px -1px rgba(0, 0, 0, 0.1);
+}
+.sum-board i {
+  display: block;
+  height: 100px;
+  font-size: 100px;
+  line-height: 100px;
+  width: 100px;
+  float: left;
+  text-align: center;
+  margin-right: 20px;
+  padding-right: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.sum-board .title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+
+/*pictures*/
+.projects{
+  background: #f0f0f0;
+  color: rgb(7, 0, 0);
+}
+.projects .title-border{
+  content: "";
+  width: 30%;
+  height: 2px;
+  display: block;
+  background: block;
+  background-color: rgb(12, 12, 12);
+  border-radius: 50%;
+  margin: 1%;
+  margin-left: 35%;
+}
+/*.main-container{
+  margin: -2px;
+}*/
+.project-container{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: rgb(0, 0, 0);
+  box-shadow: 0 10px 10px rgba(8, 8, 8, 0.884);
+  cursor: pointer;
+ 
+
+}/*Makes a card and 3d effects*/
+
+.project-container .img-content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;/*CARD BODY*/
+  margin-bottom:10px;
+}
+
+.project-container .img-content img{
+  position: absolute;/*Hide the card Body*/
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.project-container:hover .img-content img{
+  opacity: 0;
+  
+}
+.project-container .content{
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  width: 80%;
+  height: 60px;
+  background: rgb(209, 208, 208);
+  overflow: hidden;
+  padding: 15px;
+}
+.project-container:hover .content{
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
+.project-container .content h3{
+  font-size: 20px;
+
+}
+.project-container .content p{
+  margin: 10px 0 0;
+  opacity: 0;
+  line-height: 1.2em;
+  transition: 0.5s;
+  text-align: justify;
+}
+.project-container:hover  .content p{
+  opacity: 1;
+  transition-delay: 0.4s;
+}
+
+/*End of Picture Section*/
+
+/*=======Our Program========*/
+.story-box{
+  padding:15px;
+  background:#f5f2f2;
+  margin-bottom:30px;
+  position:relative;
+}
+.story-icon{
+  width:90px;
+  height:90px;
+  text-align:center;
+  line-height: 90px;
+}
+.story-icon i{
+  font-size:50px;
+  color:rgb(255, 250, 250);
+  mix-blend-mode: difference;
+}
+
+.story-box h2{
+  font-size:24px;
+  font-weight:bold;
+  color:rgb(255, 241, 241);
+  mix-blend-mode: difference;
+}
+.story-box p{
+  font-size: 16px;
+  font-weight:light;
+  color:rgb(245, 237, 237);
+  mix-blend-mode: difference;
+}
+
+.overlay{
+  margin:20px auto;
+  border:none;
+  padding:10px 44px;
+  font-size:20px;
+  position:relative;
+  display:inline-block;
+}
+.overlay:before{
+  transition:all 0.85s cubic-bezier(0.68,-0.55,0.265,1.55);
+  content:'';
+  width:100%;
+  height: 100%;
+  background: #dddada;
+  position: absolute;
+  top:0;
+  left:0;
+  border-radius:10px 0px 0px 10px;
+  
+}
+.overlay:hover:before{
+  background:#312f2f;
+  width:100%;
+  border-radius:10px;
+}
+/*========End of Our Program========*/
+
+  /*# Contact
+--------------------------------------------------------------*/
+.contact .info {
+  padding: 20px 40px;
+  background: #f7e759;
+  color: #131313;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+.contact .info i {
+  font-size: 30px;
+  color: #a31818;
+  margin-bottom: 15px;
+}
+
+.contact .info h4 {
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact .info p {
+  font-size: 15px;
+}
+.rounded-cor{
+  border-radius: 50px;
+}
+/*Footer*/
+.social{
+display: flex;
+width: 250px;
+justify-content: space-between;
+list-style: none;
+}
+.social .list-item{
+  position: relative;
+  width:60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+}
+.social .list-item:after,
+.social .list-item:before{
+  content:"";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, red, yellow);
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0;
+  transition: 1s;
+}
+.social .list-item:after{
+  filter: blur(20px);
+}
+.social .list-item:hover:before,
+.social .list-item:hover:after{
+opacity: 1;
+}
+.social .list-item .list-link{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background: #000;
+  font-size: 28px;
+  border-radius: 50%;
+  transition:2s; 
+}
+.social .list-item .list-link i{
+  text-shadow: 0 2px 5px rgba(0,0,0, .2);
+
+}
+.social .list-item:nth-child(1) a,
+.social .list-item:nth-child(1):before,
+.social .list-item:nth-child(1):after{
+  background: linear-gradient(45deg, #00aeff, #a200ff);
+}
+.social .list-item:nth-child(2) a,
+.social .list-item:nth-child(2):before,
+.social .list-item:nth-child(2):after{
+  background: linear-gradient(45deg, #00a2ff, #ff1e00);
+}
+.social .list-item:nth-child(3) a,
+.social .list-item:nth-child(3):before,
+.social .list-item:nth-child(3):after{
+  background: linear-gradient(45deg,#ff008c, #ce6708);
+}
+.social .list-item:nth-child(4) a,
+.social .list-item:nth-child(4):before,
+.social .list-item:nth-child(4):after{
+  background: linear-gradient(45deg,#0791c7, #f794a5);
+}
+  
